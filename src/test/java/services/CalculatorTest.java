@@ -13,6 +13,7 @@ public class CalculatorTest {
         String actual = sut.add(1, 1);
         assertThat(actual, is("2"));
     }
+    @Test
     public void testAdd2() {
     	Calculator sut = new Calculator();
     	String actual = sut.add(1, 3);
