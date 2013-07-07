@@ -19,4 +19,10 @@ public class CalculatorTest {
     	String actual = sut.add(1, 3);
     	assertThat(actual,is("4"));
     }
+    @Test
+    public void testAdd3() {
+    	Calculator sut = new Calculator();
+    	String actual = sut.add(2, -3);
+    	assertThat(actual,is("-1"));
+    }
 }
