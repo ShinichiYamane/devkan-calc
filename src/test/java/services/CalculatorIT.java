@@ -21,6 +21,16 @@ public class CalculatorIT extends JerseyTest {
 
         assertThat(actual, is("2"));
     }
+    @Test
+    public void testSubtract() {
+        String actual = target("/calc/subtract")
+                .queryParam("a", "3")
+                .queryParam("b", "5")
+                .request()
+                .get(String.class);
+
+        assertThat(actual, is("-2"));
+    }
 
     @Override
     protected Application configure() {
