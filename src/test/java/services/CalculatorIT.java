@@ -21,7 +21,6 @@ public class CalculatorIT extends JerseyTest {
 
         assertThat(actual, is("2"));
     }
-    /**
     @Test
     public void testSubtract() {
         String actual = target("/calc/subtract")
@@ -32,7 +31,6 @@ public class CalculatorIT extends JerseyTest {
 
         assertThat(actual, is("-2"));
     }
-    **/
     @Override
     protected Application configure() {
         return new ResourceConfig(Calculator.class);
