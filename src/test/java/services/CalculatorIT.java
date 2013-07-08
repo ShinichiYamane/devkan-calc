@@ -31,6 +31,16 @@ public class CalculatorIT extends JerseyTest {
 
         assertThat(actual, is("-2"));
     }
+    @Test
+    public void testMultiply() {
+    	String actual = target("/calc/multiply")
+    			.queryParam("a",3)
+    			.queryParam("b", 5)
+    			.request()
+    			.get(String.class);
+
+    	assertThat(actual, is("5"));
+    }
     @Override
     protected Application configure() {
         return new ResourceConfig(Calculator.class);
