@@ -29,7 +29,7 @@ public class CalculatorIT extends JerseyTest {
                 .request()
                 .get(String.class);
 
-        assertThat(actual, is("-2"));
+        assertThat(actual, is("8"));
     }
     @Override
     protected Application configure() {
