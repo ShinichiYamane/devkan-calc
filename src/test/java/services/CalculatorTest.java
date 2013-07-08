@@ -31,4 +31,10 @@ public class CalculatorTest {
     	String actual = sut.subtract(3, 1);
     	assertThat(actual,is("2"));
     }
+    @Test
+    public void testMul() {
+    	Calculator sut = new Calculator();
+    	String actual = sut.multiply(1, 3);
+    	assertThat(actual,is("3"));
+    }
 }
