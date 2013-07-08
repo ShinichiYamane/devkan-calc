@@ -25,12 +25,10 @@ public class CalculatorTest {
     	String actual = sut.add(2, -3);
     	assertThat(actual,is("-1"));
     }
-/**
     @Test
     public void testSub() {
     	Calculator sut = new Calculator();
     	String actual = sut.subtract(3, 1);
     	assertThat(actual,is("2"));
     }
-    **/
 }
