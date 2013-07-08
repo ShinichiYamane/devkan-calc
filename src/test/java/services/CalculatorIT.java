@@ -23,7 +23,7 @@ public class CalculatorIT extends JerseyTest {
     }
     @Test
     public void testSubtract() {
-        String actual = target("/calc/add")
+        String actual = target("/calc/subtract")
                 .queryParam("a", "3")
                 .queryParam("b", "5")
                 .request()
