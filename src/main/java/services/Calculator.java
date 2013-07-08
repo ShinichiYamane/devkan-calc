@@ -20,6 +20,6 @@ public class Calculator {
     }
     @GET @Path("multiply")
     public String multiply(@QueryParam("a")int a, @QueryParam("b")int b) {
-    	return "1";
+    	return (new Integer(a*b)).toString();
     }
 }
